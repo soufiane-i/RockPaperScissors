@@ -1,0 +1,84 @@
+.header {
+  width: 50%;
+  height: 180px;
+  margin: 50px auto;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.title {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 2.8rem;
+}
+
+.scoring {
+  width: 180px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.scoreTitle {
+  height: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(229, 64%, 46%);
+}
+
+.score {
+  height: 40%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 110px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+  }
+
+  .scoring {
+    width: 100px;
+  }
+
+  .scoreTitle {
+    font-size: 0.8rem;
+  }
+
+  .score {
+    font-size: 2.8rem;
+  }
+}
