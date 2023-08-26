@@ -1,0 +1,76 @@
+.container {
+  height: calc(90vh - 230px);
+}
+
+.game {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.triangleContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.line2 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50px);
+}
+
+.rulesBtnContainer {
+  position: absolute;
+  bottom: 20px;
+  right: 20;
+}
+
+@media screen and (max-width: 1290px) {
+  .line1 {
+    width: 450px;
+    height: 280px;
+  }
+
+  .line2 {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gameContainer {
+    height: calc(80vh - 60px);
+  }
+  .triangleContainer {
+    transform: scale(0.8);
+  }
+  .line1 {
+    width: 350px;
+  }
+
+  .rulesBtnContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
